@@ -26,13 +26,12 @@ def scrapeData():
     querystring = {"count": "30"}
     response = requests.get(url, headers=headers, params=querystring)
     jsonData = response.json()
-    lineToWrite = {}
 
     for item in jsonData["itemList"]:
         videoId = item["id"]
-        if videoId not in processedVideoIds: # Check to see if the post ID isnt already in the file.
-            hashtags = re.findall(r'#\w+', item['desc']) # Extract hastags from title.
-            if all(re.match(r'^#[A-Za-z0-9_]+$', tag) for tag in hashtags): # Regex to check if hashtag is english
+        if videoId not in processedVideoIds:
+            hashtags = re.findall(r'#\w+', item['desc'])  # Extract hashtags from description.
+            if hashtags and all(re.match(r'^#[A-Za-z0-9_]+$', tag) for tag in hashtags):
                 videoDetails = {
                     "videoId": videoId,
                     "likes": item["stats"]["diggCount"],
@@ -40,12 +39,9 @@ def scrapeData():
                     "hashtags": hashtags,
                     "createDate": datetime.fromtimestamp(item["createTime"]).strftime('%Y-%m-%d %H:%M:%S')
                 }
-                outputFile.write(json.dumps(videoDetails) + '\n') # Convert the dictionary to a JSON string and write it to the file
+                outputFile.write(json.dumps(videoDetails) + '\n')
 
-    # Close the file after writing
-    outputFile.close()
     print("Data extraction and saving process completed.")
-
 
 for i in range(0,8):
     scrapeData()
