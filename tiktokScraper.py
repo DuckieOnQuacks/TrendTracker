@@ -23,7 +23,7 @@ def scrapeData():
         "X-RapidAPI-Host": "tiktok-api23.p.rapidapi.com"
     }
 
-    querystring = {"count": "30"}
+    querystring = {"count": "100"}
     response = requests.get(url, headers=headers, params=querystring)
     jsonData = response.json()
 
@@ -43,5 +43,5 @@ def scrapeData():
 
     print("Data extraction and saving process completed.")
 
-for i in range(0,8):
+for i in range(0,10):
     scrapeData()
