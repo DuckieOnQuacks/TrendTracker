@@ -30,16 +30,4 @@ To get started with this project:
    ```
 2. **Open in Google Co-Lab:** Download the project files from this repository and upload them to Google Co-Lab for an optimized viewing and interaction experience.
 
-## 📚 Documentation
-For a detailed explanation of our methodologies, data analysis process, and insights, refer to the included project documentation files. These files provide a comprehensive breakdown of the steps we followed and the conclusions we drew from our data.
-
-## 🤝 Contributing
-Interested in contributing to the TikTok Tracker project? We welcome contributions of all forms. For more information on how you can contribute, please refer to the CONTRIBUTING.md file in this repository.
-
-## ✨ Final Thoughts
-Our findings challenge the common perception that hashtags are a driving force in achieving virality on TikTok. As the digital landscape evolves, so too will our approaches to understanding it. Stay tuned for further updates and improvements to our predictive models!
-
-## 📞 Contact
-If you have any questions, suggestions, or would like to discuss this project further, feel free to reach out to any of our team members via GitHub.
-
 ---
