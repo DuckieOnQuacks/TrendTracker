@@ -1,11 +1,18 @@
+CS 791 - TikTok Tracker Project
+🌟 About the Project
+Welcome to the TikTok Tracker project repository! This initiative is part of Dr. Emily Hand's CS 791 Interdisciplinary Data Science Course for Spring 2024. Team members Lauren Feldman, Joey Paschke, and Ryan Baldwin dive deep into TikTok video data to uncover patterns that could predict trending content.
 
-# CS 791 - TikTok Tracker Project
+TikTok serves as a crucial platform for the spread of information. In this project, we focus on understanding how hashtags may influence the virality of posts. By analyzing data from 1,867 unique TikTok videos, including metrics like like counts, follower counts, timestamps, and hashtag usage, we strive to determine the impact of these elements on content popularity.
 
-# By Lauren Feldman, Joey Paschke, and Ryan Baldwin
+🚀 Project Insights
+Through our investigation using k-nearest neighbors clustering (KNN) and a decision tree classifier (DT), we discovered that hashtag usage does not significantly influence the popularity or reach of a post. This README covers our approach, findings, and discusses ways to refine our prediction models.
 
-# These files are best viewed via Google Co-Lab. Download these files and upload them into Google Co-Lab.
+Key Features:
+Analysis of 1,867 TikTok videos
+Utilization of KNN and DT algorithms for trend prediction
+Exploration of hashtag impact on video popularity
+📈 Models and Metrics
+We employed two main predictive models:
 
-# This project analyzes TikTok video data to predict potential trends. This project is for Dr. Emily Hand's CS 791 (Interdisciplinary Data Science Course, Spring 2024)
-
-# Social networking sites such as TikTok are vital channels for the diffusion of information across the internet. Understanding which factors drive content to become viral is of key interest in the fields of marketing, entertainment, and public outreach. In this paper, we investigate the role of hashtags as potential indicators of post popularity. We collected like count, follower count, timestamp, and hashtag data from 1867 unique TikTok videos. Through k-nearest neighbors clustering (KNN) and a decision tree classifier (DT), our analysis shows that hashtag use has no significant impact on a post's popularity or reach. We report prediction metrics for both models and discuss potential improvements for effective prediction of viral content. 
-
+K-Nearest Neighbors (KNN): For clustering based on similarity measures.
+Decision Tree Classifier (DT): To classify data into categories based on learned decision rules.
